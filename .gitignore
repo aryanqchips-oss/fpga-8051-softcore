@@ -1,0 +1,17 @@
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+*.bit
+*.ltx
+*.dcp
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+.Xil/
+.DS_Store
+Thumbs.db
+.vscode/
