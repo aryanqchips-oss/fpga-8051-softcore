@@ -58,12 +58,3 @@ This protocol has been tested as a **standalone memory controller**. It is not y
 ## Attribution
 
 The CPU core in `rtl/third_party/r8051/` is by **Li Xinbing** and is distributed under Apache License 2.0. The original license is included alongside the RTL. Upstream: <https://github.com/risclite/R8051>. This third-party core is not original work by this project maintainer; preserve its copyright and license notice.
-
-## Resume wording — accurate beta description
-
-**FPGA-Based 8051 Soft-Core Integration (Beta) — Verilog, Vivado, Artix-7, UART**
-- Integrated and simulated an open-source 8051 soft-core at RTL level; developed UART communication and a byte-oriented program-memory controller.
-- Verified UART echo on an Artix-7 board and tested memory-controller read/write behavior and basic CPU instruction/RAM operations in simulation.
-- Developing writable program-memory integration and a UART firmware-loading path; end-to-end Keil C51 execution remains in progress.
-
-Do not describe the UART bootloader or complete 8051 computer as finished until CPU, writable program BRAM, and UART loader work together.
