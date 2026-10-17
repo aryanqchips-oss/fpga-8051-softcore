@@ -18,6 +18,23 @@ An educational FPGA project combining an existing Verilog 8051 soft-core, UART c
 
 ## Structure
 
+## Evidence and Results
+
+### 1. Physical FPGA UART Echo Test
+
+The UART echo design was tested on the physical EDGE Artix-7 FPGA board. A Python script transmitted the character `A` over the USB-UART serial connection and successfully received the same character back.
+
+![Successful FPGA UART echo test](docs/images/uart_echo_test.png)
+
+*Figure 1: Successful UART echo test verified using Python and Windows PowerShell.*
+
+### 2. 8051 CPU Smoke-Test Simulation
+
+A Vivado behavioral simulation was used to verify basic execution of the 8051 soft-core. In the smoke test, the accumulator reaches `0x55` while the program counter and RAM-related signals are observed.
+
+![8051 CPU smoke-test waveform](docs/images/cpu_smoke_test.png)
+
+*Figure 2: Vivado behavioral simulation of the 8051 CPU smoke test. This is simulation evidence, not a physical-hardware execution of the complete CPU system.*
 ```text
 rtl/third_party/r8051/  Upstream R8051 core and instruction include
 rtl/uart/              UART RX, UART TX, UART echo top
